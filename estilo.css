@@ -37,6 +37,13 @@ body{
     font-family: var(--fonte_padrao);
     background-color: var(--cor1);
 }
+
+a.externo::after{
+
+    content:'\A00\1F517';
+
+}
+
 header{
     background-color: var(--cor4);
     background-image: linear-gradient(to bottom, var(--cor3),var(--cor5));
@@ -51,6 +58,7 @@ header > h1{
     font-family: var(--fonte_destaque);
     margin-bottom: 20px;
     font-size: 3em;
+    font-weight: normal;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.199)
 
 }
@@ -62,6 +70,7 @@ header > p{
     padding-right:10px;
     padding-left: 10px;
     margin: auto;
+    margin-bottom: 20px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.212);
 }
 
@@ -85,7 +94,10 @@ nav > a:hover {
     background-color: var(--cor3);
     color: var(--cor5);
  }
-main{
+
+
+
+ main {
     background-color: rgb(247, 242, 242);
     max-width: 800px;
     min-width: 300px;
@@ -138,13 +150,55 @@ main h2 {
     font-family: var(--fonte_android);
     color: var(--cor4);
     font-size: 1.3em;
+    font-weight: normal;
     background-image: linear-gradient(to right, var(--cor1),transparent);
     text-indent: 7px;
+
+}
+
+aside{
+
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.26);
+}
+
+aside > ul{
+
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0';
+}
+
+aside h3{
+
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
 
 }
 
 footer{
     background-color:var(--cor5) ;
     color: white;
+    text-align: center;
+    font-family:0.8em ;
+
 }
 
+footer a{
+
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a{
+
+    text-decoration: underline;
+    color: var(--cor1);
+
+}
